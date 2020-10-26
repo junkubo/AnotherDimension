@@ -20,7 +20,7 @@ class ArrayOps {
     int[] total = new int[2];
 
       for (int i = 0; i < matrix.length; i++) {
-        for (int j = 0; j < [i]; j++) {
+        for (int j = 0; j < matrix[i].length; j++) {
             total[i] += matrix[i][j];
         }
       }
@@ -31,19 +31,19 @@ class ArrayOps {
     int[] largest = new int[2];
 
       for (int i = 0; i < matrix.length; i++) {
-        for (int j = 0; j < arr[i]; j++) {
+        for (int j = 0; j < matrix.length; j++) {
             if (matrix[i][j] > largest[i]) largest[i] = matrix[i][j];
         }
       }
     return largest;
   }
 
-  public static int[] sum (int[][] matrix) {
-    int[] total = new int[2];
+  public static int sum (int[][] matrix) {
+    int total =0;
 
       for (int i = 0; i < matrix.length; i++) {
-        for (int j = 0; j < matrix[i]; j++) {
-            total[i] += matrix[i][j];
+        for (int j = 0; j < matrix[i].length; j++) {
+            total += matrix[i][j];
         }
       }
     return total;
