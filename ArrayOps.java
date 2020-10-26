@@ -24,9 +24,19 @@ class ArrayOps {
             total[i] += arr[i][j];
         }
       }
+    return total;
   }
 
+  public static int[] sumRows(int[][] matrix) {
+    int[] largest = new int[2];
 
+      for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr[i]; j++) {
+            if (arr[i][j] > largest[i]) largest[i] = arr[i][j];
+        }
+      }
+    return largest;
+  }
 
 
 
