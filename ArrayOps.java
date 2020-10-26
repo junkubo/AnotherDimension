@@ -59,6 +59,13 @@ class ArrayOps {
     return total;
   }
 
+  public static int isRowMagic (int[][] matrix) {
+    int total1 = sum(matrix[0]);
+    int total2 = sum(matrix[1]);
+
+    return total1 == total2;
+
+  }
 
 
 
