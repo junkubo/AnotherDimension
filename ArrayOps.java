@@ -50,7 +50,7 @@ class ArrayOps {
   }
 
 
-  public static int sumCols (int[][] matrix) {
+  public static int[] sumCols (int[][] matrix) {
     int[] total = new int[matrix.length];
     for (int i = 0; i < matrix.length; i++) {
         total[i] = matrix[0][i] + matrix[1][i];
@@ -59,12 +59,20 @@ class ArrayOps {
     return total;
   }
 
-  public static int isRowMagic (int[][] matrix) {
+  public static boolean isRowMagic (int[][] matrix) {
     int total1 = sum(matrix[0]);
     int total2 = sum(matrix[1]);
 
     return total1 == total2;
 
+  }
+  public static boolean isColMagic (int[][] matrix) {
+    int[] total = new int[matrix[0].length];
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < matrix[i].length; j++) {
+        total[i] +=
+      }
+    }
   }
 
 
