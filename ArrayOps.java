@@ -17,7 +17,7 @@ class ArrayOps {
     return largest;
   }
   public static int[] sumRows(int[][] matrix) {
-    int[] total = new int[2];
+    int[] total = new int[matrix.length];
 
       for (int i = 0; i < matrix.length; i++) {
         for (int j = 0; j < matrix[i].length; j++) {
@@ -28,7 +28,7 @@ class ArrayOps {
   }
 
   public static int[] largestInRows(int[][] matrix) {
-    int[] largest = new int[2];
+    int[] largest = new int[matrix.length];
 
       for (int i = 0; i < matrix.length; i++) {
         for (int j = 0; j < matrix.length; j++) {
