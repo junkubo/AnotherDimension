@@ -23,10 +23,11 @@ class Tester {
     System.out.println(ArrayOps.isColMagic(E));
     System.out.println(ArrayOps.isLocationMagic(E,1, 0));
 
-
-    //System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
-    //System.out.println(Arrays.toString(ArrayOps.sum(B)));
-    //System.out.println(Arrays.toString(ArrayOps.sum(A)));
+    System.out.println(ArrayOps.sum(A));
+    System.out.println(ArrayOps.largest(B));
+    System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
+    System.out.println(ArrayOps.sum(B));
   }
 
 
